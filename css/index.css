@@ -66,6 +66,15 @@ table {
   display: flex;
 }
 
+a, span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 .col-4 {
   width: 33.333333333%;
 }
@@ -78,10 +87,14 @@ table {
   width: 50%;
 }
 
+.header {
+  background-color: red;
+}
+
 .header__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__left {
@@ -102,5 +115,119 @@ table {
   letter-spacing: 0em;
   text-align: left;
   margin-left: 30px;
+  color: #005FA3;
+}
+
+.header__header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 22px 0;
+}
+
+.header__span {
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.header__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__placeholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__bottom {
+  margin-bottom: 30px;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__link {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: black;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav__link:hover {
+  font-size: 16px;
+  color: #005FA3;
+}
+
+.nav__item {
+  margin-left: 61px;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.hero {
+  background-color: violet;
+  min-height: 85vh;
+}
+
+.hero__title {
+  font-family: Merriweather;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  width: 55%;
+  padding: 170px 0 70px 0;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,7 @@
 .header{
+    background-color: red;
     &__row{
-        display: flex;
+        align-items: center;
     }
     &__left{
         display: flex;
@@ -15,5 +16,71 @@
         letter-spacing: 0em;
         text-align: left;
         margin-left:30px;
+        color: $clr-blue;
     }  
+    &__header__right{
+        display: flex;
+        flex-direction: column;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        padding: 22px 0;
+    }
+    &__span{
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 15px;
+    }
+    &__phone{
+        display: flex;
+    }
+    &__clock{
+        display: flex;
+    }
+    &__email{
+        display: flex;
+    }
+    &__placeholder{
+        display: flex;
+    }
+    &__bottom{
+        margin-bottom: 30px;
+    }
+
+   
 }
+.nav{
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: black;
+        text-transform: uppercase;
+        transition: .3s;
+        &:hover{
+            font-size: 16px;
+            color: $clr-blue;
+        }
+    }
+    &__item{
+        margin-left: 61px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+}
+

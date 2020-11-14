@@ -1,0 +1,18 @@
+.hero{
+    background-color: violet;
+    min-height: 85vh;
+    &__title{
+        font-family: Merriweather;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        width: 55%;
+        padding: 170px 0 70px 0;
+
+    }
+    
+}
