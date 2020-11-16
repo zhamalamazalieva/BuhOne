@@ -94,8 +94,8 @@ ul li {
   opacity: .7;
   outline: none;
   border: none;
-  -webkit-box-shadow: 5px 5px 2px #4ca8e9;
-          box-shadow: 5px 5px 2px #4ca8e9;
+  background-color: transparent;
+  border: 2px solid white;
 }
 
 .col-4 {
@@ -231,6 +231,10 @@ ul li {
   margin-left: 0;
 }
 
+.hero {
+  position: relative;
+}
+
 .hero__title {
   font-family: Merriweather;
   font-size: 48px;
@@ -252,6 +256,36 @@ ul li {
   position: absolute;
   z-index: 50;
   top: 170px;
+}
+
+.hero__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 20%;
+  right: 19%;
+}
+
+.arrow__prev, .arrow__next {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  opacity: 0.2;
+  fill: black;
+}
+
+.arrow__prev:hover, .arrow__next:hover {
+  opacity: 0.4;
 }
 
 .hero .slick-slider {
