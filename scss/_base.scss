@@ -16,9 +16,8 @@ ul li{
     list-style-type:none;
 }
 .btn{
-    padding: 18px 19px;
+    padding: 18px 50px;
     color: white;
-    background-color: $clr-blue;
     font-family: Lato;
     font-size: 18px;
     font-style: normal;
@@ -26,5 +25,12 @@ ul li{
     line-height: 1;
     letter-spacing: 0em;
     text-align: center;
+    background-color:#005FA3;
+    transition: .5s;
+    &:hover{
+        opacity: .7;
+        outline: none;
+    }
 
 }
+
