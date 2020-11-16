@@ -93,6 +93,9 @@ ul li {
 .btn:hover {
   opacity: .7;
   outline: none;
+  border: none;
+  -webkit-box-shadow: 5px 5px 5px white;
+          box-shadow: 5px 5px 5px white;
 }
 
 .col-4 {
@@ -237,12 +240,12 @@ ul li {
   letter-spacing: 0em;
   text-align: left;
   color: white;
-  width: 52%;
+  width: 38%;
+  margin-bottom: 80px;
 }
 
-.hero__img {
-  width: 100%;
-  position: relative;
+.hero__button {
+  margin-bottom: 243px;
 }
 
 .hero__inner {

@@ -1,6 +1,4 @@
-.hero{
-
-   
+.hero{ 
     &__title{
         font-family: Merriweather;
         font-size: 48px;
@@ -10,13 +8,11 @@
         letter-spacing: 0em;
         text-align: left;
         color: white;
-        width: 52%;
-
+        width: 38%;
+        margin-bottom: 80px;
     }
-    &__img{
-        width: 100%;
-        position: relative;
-
+    &__button{
+      margin-bottom: 243px;
     }
     &__inner{
         position: absolute;
@@ -24,7 +20,6 @@
         width: 100%;
         top: 170px;
     }
- 
 }
 
 .slick-slide {

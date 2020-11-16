@@ -27,9 +27,12 @@ ul li{
     text-align: center;
     background-color:#005FA3;
     transition: .5s;
+    
     &:hover{
         opacity: .7;
         outline: none;
+        border: none;
+        box-shadow: 5px 5px 5px white;
     }
 
 }
