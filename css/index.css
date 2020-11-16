@@ -94,8 +94,8 @@ ul li {
   opacity: .7;
   outline: none;
   border: none;
-  -webkit-box-shadow: 5px 5px 5px white;
-          box-shadow: 5px 5px 5px white;
+  -webkit-box-shadow: 5px 5px 2px #4ca8e9;
+          box-shadow: 5px 5px 2px #4ca8e9;
 }
 
 .col-4 {
@@ -240,7 +240,7 @@ ul li {
   letter-spacing: 0em;
   text-align: left;
   color: white;
-  width: 38%;
+  max-width: 64%;
   margin-bottom: 80px;
 }
 
@@ -251,47 +251,42 @@ ul li {
 .hero__inner {
   position: absolute;
   z-index: 50;
-  width: 100%;
   top: 170px;
 }
 
-.slick-slide {
-  border: none !important;
-  outline: none !important;
+.hero .slick-slider {
+  width: 100%;
 }
 
-.slick-arrow {
-  display: none !important;
-}
-
-.hero .slick-dots {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+.hero .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
+}
+
+.hero .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+}
+
+.hero .slick-dots li {
+  margin-right: 40px;
 }
 
 .hero .slick-dots button {
-  width: 40px;
-  height: 7px;
-  top: -100px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
   font-size: 0;
-  background-color: #cecece;
-  border: none;
-  outline: none;
-  margin-right: 15px;
-  cursor: pointer;
+  background-color: #ffff;
+  opacity: 0.4;
 }
 
 .hero .slick-dots .slick-active button {
-  background-color: #d7b399;
-}
-
-.hero .slick-list {
-  min-height: 400px;
+  opacity: 1;
 }
 /*# sourceMappingURL=index.css.map */
