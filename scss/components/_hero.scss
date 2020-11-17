@@ -3,7 +3,7 @@
     min-height:750px;
   }
   &__title {
-    @include font(Merriweather, 700);
+    @include font($font-weather, 700);
     font-size: 48px;
     font-style: normal;
     line-height: 1.5;
@@ -24,7 +24,7 @@
   &__arrow {
     display: flex;
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     right: 19%;
   }
 }
@@ -60,7 +60,7 @@
 .hero .slick-dots {
   display: flex;
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   left: 20%;
 }
 .hero .slick-dots li {

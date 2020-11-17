@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -56,6 +57,8 @@ table {
 
 /* COLOR OF PAGE
 =========================================*/
+/*FONT
+=========================================*/
 .container {
   width: 100%;
   max-width: 1110px;
@@ -66,6 +69,11 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 a, span {
@@ -80,10 +88,10 @@ ul li {
 .btn {
   padding: 18px 50px;
   color: white;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
@@ -100,6 +108,21 @@ ul li {
   border: none;
   background-color: transparent;
   border: 2px solid white;
+}
+
+.section__suptitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+  color: #BDBDBD;
+}
+
+.section__title {
+  font-family: "Merriweather";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.5;
 }
 
 .col-4 {
@@ -130,11 +153,11 @@ ul li {
 }
 
 .header__text {
-  font-family: Merriweather;
+  font-family: "Merriweather";
+  font-weight: 900;
   font-size: 36px;
   font-style: normal;
-  font-weight: 900;
-  line-height: 50px;
+  line-height: 1.5;
   letter-spacing: 0em;
   text-align: left;
   margin-left: 30px;
@@ -161,11 +184,11 @@ ul li {
 }
 
 .header__span {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 13px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 17px;
+  line-height: 1.5;
   letter-spacing: 0em;
   text-align: left;
   margin-left: 15px;
@@ -209,10 +232,10 @@ ul li {
 }
 
 .nav__link {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
   line-height: 1;
   letter-spacing: 0.1em;
   text-align: left;
@@ -239,7 +262,7 @@ ul li {
 }
 
 .hero__title {
-  font-family: Merriweather;
+  font-family: "Merriweather";
   font-weight: 700;
   font-size: 48px;
   font-style: normal;
@@ -266,7 +289,7 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   right: 19%;
 }
 
@@ -319,7 +342,7 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   left: 20%;
 }
 
@@ -345,5 +368,68 @@ ul li {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.services__row {
+  padding-bottom: 140px;
+}
+
+.services__title {
+  padding-top: 40px;
+}
+
+.services__suptitle {
+  padding-top: 140px;
+}
+
+.services__row {
+  padding-top: 100px;
+}
+
+.services__item {
+  position: relative;
+  max-width: 350px;
+  max-height: 360px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 0 30px 30px 0;
+}
+
+.services__item:first-child {
+  margin-left: 0;
+}
+
+.services__img {
+  width: 100%;
+}
+
+.services__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #005FA3;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.services__hover:hover {
+  opacity: .5;
+}
+
+.services__description {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  color: white;
+  width: 50%;
+  z-index: 2;
 }
 /*# sourceMappingURL=index.css.map */

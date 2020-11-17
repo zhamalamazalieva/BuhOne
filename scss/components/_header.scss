@@ -7,11 +7,10 @@
         align-items: center;
     }
     &__text{
-        font-family: Merriweather;
+        @include font($font-weather, 900);
         font-size: 36px;
         font-style: normal;
-        font-weight: 900;
-        line-height: 50px;
+        line-height: 1.5;
         letter-spacing: 0em;
         text-align: left;
         margin-left:30px;
@@ -26,11 +25,10 @@
         padding: 22px 0;
     }
     &__span{
-        font-family: Lato;
+        @include font($font-lato, 400);
         font-size: 13px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 17px;
+        line-height: 1.5;
         letter-spacing: 0em;
         text-align: left;
         margin-left: 15px;
@@ -59,10 +57,9 @@
         justify-content: space-between;
     }
     &__link{
-        font-family: 'Lato', sans-serif;
+        @include font($font-lato, 700);
         font-size: 14px;
         font-style: normal;
-        font-weight: 700;
         line-height: 1;
         letter-spacing: 0.1em;
         text-align: left;
