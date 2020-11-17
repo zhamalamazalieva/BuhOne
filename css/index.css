@@ -54,6 +54,8 @@ table {
   border-spacing: 0;
 }
 
+/* COLOR OF PAGE
+=========================================*/
 .container {
   width: 100%;
   max-width: 1110px;
@@ -230,8 +232,8 @@ ul li {
   margin-left: 0;
 }
 
-.hero {
-  position: relative;
+.hero__img {
+  min-height: 750px;
 }
 
 .hero__title {
@@ -282,14 +284,17 @@ ul li {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.arrow__prev:hover,
-.arrow__next:hover {
-  opacity: 0.4;
-}
-
 .arrow__prev svg,
 .arrow__next svg {
   fill: white;
+}
+
+.arrow__prev:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.arrow__next:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .hero .slick-slide {
@@ -321,12 +326,15 @@ ul li {
 }
 
 .hero .slick-dots button {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   font-size: 0;
   background-color: #ffff;
   opacity: 0.4;
+  outline: none;
+  border: none;
+  padding: 0;
 }
 
 .hero .slick-dots .slick-active button {

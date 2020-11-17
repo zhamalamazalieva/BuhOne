@@ -1,5 +1,7 @@
 .hero {
-  position: relative;
+  &__img{
+    min-height:750px;
+  }
   &__title {
     font-family: Merriweather;
     font-size: 48px;
@@ -35,12 +37,15 @@
   justify-content: center;
   align-items: center;
   background-color:rgba(255,255,255,.2);
-  &:hover {
-    opacity: 0.4;
-  }
   svg{
     fill: white;
   }
+}
+.arrow__prev:hover{
+  background-color: rgba(255,255,255,.4);
+}
+.arrow__next:hover{
+  background-color: rgba(255,255,255,.4);
 }
 
 .hero .slick-slide {
@@ -63,12 +68,16 @@
   margin-right: 40px;
 }
 .hero .slick-dots button {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   font-size: 0;
   background-color: #ffff;
   opacity: 0.4;
+  outline: none;
+  border: none;
+  padding:0;
+
 }
 .hero .slick-dots .slick-active button {
   opacity: 1;
