@@ -134,7 +134,6 @@ ul li {
   letter-spacing: 0em;
   text-align: left;
   margin-left: 30px;
-  color: #005FA3;
 }
 
 .header__header__right {
@@ -267,7 +266,8 @@ ul li {
   right: 19%;
 }
 
-.arrow__prev, .arrow__next {
+.arrow__prev,
+.arrow__next {
   width: 60px;
   height: 60px;
   display: -webkit-box;
@@ -279,13 +279,22 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
-  opacity: 0.2;
-  fill: black;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.arrow__prev:hover, .arrow__next:hover {
+.arrow__prev:hover,
+.arrow__next:hover {
   opacity: 0.4;
+}
+
+.arrow__prev svg,
+.arrow__next svg {
+  fill: white;
+}
+
+.hero .slick-slide {
+  border: none !important;
+  outline: none !important;
 }
 
 .hero .slick-slider {
@@ -322,5 +331,9 @@ ul li {
 
 .hero .slick-dots .slick-active button {
   opacity: 1;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */

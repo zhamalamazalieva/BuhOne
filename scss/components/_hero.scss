@@ -1,67 +1,68 @@
-.hero{ 
+.hero {
   position: relative;
-    &__title{
-        font-family: Merriweather;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.5;
-        letter-spacing: 0em;
-        text-align: left;
-        color: white;
-        max-width:64%;
-        margin-bottom: 80px;
-    }
-    &__button{
-      margin-bottom: 243px;
-    }
-    &__inner{
-        position: absolute;
-        z-index: 50;
-        top: 170px;
-    }
-    &__arrow{
-      display: flex;
-      position: absolute;
-      bottom:20%;
-      right: 19%;
-     
-    }
-
-}
-.arrow__prev, .arrow__next{
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    opacity: 0.2;
-    fill:black;
-    &:hover{
-      opacity: 0.4;
-    }
+  &__title {
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    max-width: 64%;
+    margin-bottom: 80px;
   }
+  &__button {
+    margin-bottom: 243px;
+  }
+  &__inner {
+    position: absolute;
+    z-index: 50;
+    top: 170px;
+  }
+  &__arrow {
+    display: flex;
+    position: absolute;
+    bottom: 20%;
+    right: 19%;
+  }
+}
+.arrow__prev,
+.arrow__next {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(255,255,255,.2);
+  &:hover {
+    opacity: 0.4;
+  }
+  svg{
+    fill: white;
+  }
+}
 
-
-
-.hero .slick-slider{
+.hero .slick-slide {
+  border: none !important;
+  outline: none !important;
+}
+.hero .slick-slider {
   width: 100%;
 }
-.hero .slick-track{
+.hero .slick-track {
   display: flex;
 }
-.hero .slick-dots{
+.hero .slick-dots {
   display: flex;
   position: absolute;
   bottom: 20%;
   left: 20%;
-
 }
-.hero .slick-dots li{
+.hero .slick-dots li {
   margin-right: 40px;
 }
-.hero .slick-dots button{
+.hero .slick-dots button {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -73,4 +74,6 @@
   opacity: 1;
 }
 
-
+::-webkit-scrollbar {
+  display: none;
+}
