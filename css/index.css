@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Merriweather:wght@300;400;700;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Merriweather:wght@300;400;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -90,6 +90,8 @@ ul li {
   background-color: #005FA3;
   -webkit-transition: .5s;
   transition: .5s;
+  outline: none;
+  border: none;
 }
 
 .btn:hover {
@@ -238,15 +240,15 @@ ul li {
 
 .hero__title {
   font-family: Merriweather;
+  font-weight: 700;
   font-size: 48px;
   font-style: normal;
-  font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0em;
   text-align: left;
   color: white;
   max-width: 64%;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .hero__button {

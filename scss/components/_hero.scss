@@ -3,16 +3,15 @@
     min-height:750px;
   }
   &__title {
-    font-family: Merriweather;
+    @include font(Merriweather, 700);
     font-size: 48px;
     font-style: normal;
-    font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0em;
     text-align: left;
     color: white;
     max-width: 64%;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
   &__button {
     margin-bottom: 243px;
