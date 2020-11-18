@@ -20,6 +20,18 @@ $('.collegue__slider').slick({
   nextArrow:'.arrow__next'
 })
 
+/*REVIEWS SLIDER
+===========================================*/
+$('.reviews__slider').slick({
+  dots:true,
+  infinite:true,
+  arrows:true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow:'.arrow__prev',
+  nextArrow:'.arrow__next'
+})
+
 /*ANIMATE WOW
 ===========================================*/
   new WOW().init();
