@@ -1,4 +1,4 @@
-/*SLIDER
+/*HERO SLIDER
 ============================================*/
 $('.hero__slider').slick({
   dots: true,
@@ -8,6 +8,17 @@ $('.hero__slider').slick({
 	nextArrow:'.arrow__next',
   });
 
+/*COLLEGUE SLIDER
+===========================================*/
+$('.collegue__slider').slick({
+  dots:true,
+  infinite:true,
+  arrows:true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow:'.arrow__prev',
+  nextArrow:'.arrow__next'
+})
 
 /*ANIMATE WOW
 ===========================================*/

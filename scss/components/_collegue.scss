@@ -1,0 +1,70 @@
+.collegue{
+    background-color:$light-gray;
+    padding: 100px 0 250px;
+    position: relative;
+
+    &__suptitle{
+        padding-bottom:40px;
+    }
+    &__title{
+        padding-bottom: 40px;
+    }
+    &__row{
+        margin:0 -15px;
+        display: flex !important;
+    }
+    &__item{
+        padding:0 15px;
+        max-width: 255px;
+    }
+    &__img{
+        max-width: 255px;
+    }
+    &__arrow{
+        display: flex;
+        position: absolute;
+        bottom: 20%;
+        right: 20%;
+        background-color: $blue;
+        transition: 0.3s;
+        &__prev:hover{
+
+                opacity: 0.2;
+            
+        }
+     
+    }
+}
+
+.collegue .slick-slide{
+    border: none !important;
+    outline: none !important;
+}
+.collegue .slick-slider{
+    width: 100%;
+    display: flex !important;
+}
+.collegue .slick-dots{
+    display: flex;
+    position: absolute;
+    padding: 0;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-185%);
+}
+.collegue .slick-dots button{
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background-color: $blue;
+    opacity: 0.4;
+    margin-right: 40px;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-size: 0;
+
+}
+.collegue .slick-dots .slick-active button{
+    opacity: 1;
+}
