@@ -1,0 +1,35 @@
+.feedback{
+    background-image: url('/images/jpg/feedback__img.jpg');
+    background-position: center;
+    background-size: cover;
+    &__left{
+        padding-right: 100px;
+    }
+    &__title{
+        padding: 122px 0 62px;
+        color: white;
+    }
+    &__description{
+        @include font($font-lato, 300);
+        font-size: 18px;
+        line-height: 1.5;
+        color: white;
+        padding-bottom: 80px;
+    }
+    &__contact{
+        display: flex;
+        justify-content: space-between;
+        @include font($font-lato, 300);
+        font-size: 21px;
+        line-height: 1.5;
+        color: white;
+        .phone, .email{
+            display: flex;
+            align-items: center;
+        }
+        .phone svg, .email svg{
+            margin-right: 16px;
+        }
+      
+    }
+}

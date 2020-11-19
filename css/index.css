@@ -753,4 +753,55 @@ a, span {
 .reviews .slick-dots .slick-active button {
   opacity: 1;
 }
+
+.feedback {
+  background-image: url("/images/jpg/feedback__img.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.feedback__left {
+  padding-right: 100px;
+}
+
+.feedback__title {
+  padding: 122px 0 62px;
+  color: white;
+}
+
+.feedback__description {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  padding-bottom: 80px;
+}
+
+.feedback__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1.5;
+  color: white;
+}
+
+.feedback__contact .phone, .feedback__contact .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__contact .phone svg, .feedback__contact .email svg {
+  margin-right: 16px;
+}
 /*# sourceMappingURL=index.css.map */
