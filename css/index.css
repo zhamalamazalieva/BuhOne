@@ -841,6 +841,10 @@ a, span {
   padding-top: 20px;
 }
 
+.feedback__form .form__row1 {
+  margin-bottom: 30px;
+}
+
 .feedback__form label {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -903,9 +907,11 @@ a, span {
   background-color: transparent;
   outline: none;
   width: 100%;
+  min-height: 130px;
 }
 
 .feedback__button {
   margin-bottom: 140px;
+  float: right;
 }
 /*# sourceMappingURL=index.css.map */

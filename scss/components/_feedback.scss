@@ -34,7 +34,7 @@
             margin-right: 16px;
         }
     }
-  
+
     &__flex{
         display: flex;
         flex-direction: column;
@@ -43,6 +43,9 @@
    
     &__form{ 
         padding-top: 20px;
+        .form__row1{
+            margin-bottom: 30px;
+        }
 
         label{
             @include font($font-lato, 400);
@@ -79,10 +82,12 @@
             background-color: transparent;
             outline: none;
             width: 100%;
+            min-height: 130px;
         }
        
     }
     &__button{
         margin-bottom: 140px;
+        float: right;
     }
 }
