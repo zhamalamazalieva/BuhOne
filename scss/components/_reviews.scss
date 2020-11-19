@@ -17,7 +17,7 @@
         @include font($font-lato, 300);
         font-size: 18px;
         line-height: 1.5;
-        // padding-bottom: 60px;
+        padding-bottom: 60px;
     }
     &__author{
         display: flex;
@@ -64,12 +64,12 @@
     padding: 28px;
     border: none;
     outline: none;
-    opacity: 0.2;
+    opacity: 1;
     bottom: 24%;
     z-index: 5;
     transition: .3s;
     &:hover{
-      opacity:1;
+      opacity:.2;
     }
 }
 .reviews .slick-prev{

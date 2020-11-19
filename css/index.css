@@ -566,12 +566,12 @@ a, span {
   padding: 28px;
   border: none;
   outline: none;
-  opacity: 0.2;
+  opacity: 1;
   bottom: -100%;
 }
 
 .collegue .slick-arrow:hover {
-  opacity: 1;
+  opacity: .2;
 }
 
 .collegue .slick-prev {
@@ -649,6 +649,7 @@ a, span {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
+  padding-bottom: 60px;
 }
 
 .reviews__author {
@@ -707,7 +708,7 @@ a, span {
   padding: 28px;
   border: none;
   outline: none;
-  opacity: 0.2;
+  opacity: 1;
   bottom: 24%;
   z-index: 5;
   -webkit-transition: .3s;
@@ -715,7 +716,7 @@ a, span {
 }
 
 .reviews .slick-arrow:hover {
-  opacity: 1;
+  opacity: .2;
 }
 
 .reviews .slick-prev {
@@ -862,6 +863,7 @@ a, span {
   resize: vertical;
   background-color: transparent;
   outline: none;
+  color: white;
 }
 
 .feedback__form input ::-webkit-input-placeholder {
@@ -908,6 +910,7 @@ a, span {
   outline: none;
   width: 100%;
   min-height: 130px;
+  color: white;
 }
 
 .feedback__button {

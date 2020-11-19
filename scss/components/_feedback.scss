@@ -63,6 +63,7 @@
             resize: vertical;
             background-color: transparent;
             outline: none;
+            color: white;
             ::placeholder{
                 @include font($font-lato, 300);
                 font-size: 28px;
@@ -83,6 +84,7 @@
             outline: none;
             width: 100%;
             min-height: 130px;
+            color: white;
         }
        
     }

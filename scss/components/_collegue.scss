@@ -29,10 +29,10 @@
     padding: 28px;
     border: none;
     outline: none;
-    opacity: 0.2;
+    opacity: 1;
     bottom: -100%;
     &:hover{
-      opacity:1;
+      opacity:.2;
     }
 }
 .collegue .slick-prev{
