@@ -17,25 +17,12 @@
         @include font($font-lato, 300);
         font-size: 18px;
         line-height: 1.5;
-        padding-bottom: 60px;
+        // padding-bottom: 60px;
     }
     &__author{
         display: flex;
     }
-    &__arrow{
-        display: flex;
-        position: absolute;
-        bottom: 25%;
-        right: 20%;
-        background-color: $blue;
-        transition: 0.3s;
-        &__prev:hover{
 
-                opacity: 0.2;
-            
-        }
-     
-    }
 }
 .author{
     &__img{
@@ -67,7 +54,31 @@
         line-height: 1.5;
     }
 }
-
+.reviews .slick-arrow{
+    position:absolute;
+    background-image: url('/images/svg/back.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $blue;
+    font-size: 0;
+    padding: 28px;
+    border: none;
+    outline: none;
+    opacity: 0.2;
+    bottom: 24%;
+    z-index: 5;
+    transition: .3s;
+    &:hover{
+      opacity:1;
+    }
+}
+.reviews .slick-prev{
+    right: 5.1%;
+}
+.reviews .slick-next{
+    right: 0%;
+    transform: rotate(180deg);
+}
 .reviews .slick-slide{
     border: none !important;
     outline: none !important;

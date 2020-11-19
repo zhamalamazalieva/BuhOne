@@ -634,29 +634,12 @@ a, span {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
-  padding-bottom: 60px;
 }
 
 .reviews__author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.reviews__arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  bottom: 25%;
-  right: 20%;
-  background-color: #005FA3;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.reviews__arrow__prev:hover {
-  opacity: 0.2;
 }
 
 .author__img {
@@ -697,6 +680,37 @@ a, span {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+}
+
+.reviews .slick-arrow {
+  position: absolute;
+  background-image: url("/images/svg/back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #005FA3;
+  font-size: 0;
+  padding: 28px;
+  border: none;
+  outline: none;
+  opacity: 0.2;
+  bottom: 24%;
+  z-index: 5;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.reviews .slick-arrow:hover {
+  opacity: 1;
+}
+
+.reviews .slick-prev {
+  right: 5.1%;
+}
+
+.reviews .slick-next {
+  right: 0%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .reviews .slick-slide {

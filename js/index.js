@@ -25,8 +25,6 @@ $('.reviews__slider').slick({
   arrows:true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  prevArrow:'.arrow__prev',
-  nextArrow:'.arrow__next'
 })
 
 /*ANIMATE WOW
