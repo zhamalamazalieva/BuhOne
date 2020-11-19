@@ -1,8 +1,6 @@
 .collegue{
     background-color:$light-gray;
     padding: 100px 0 250px;
-    position: relative;
-
     &__suptitle{
         padding-bottom:40px;
     }
@@ -20,20 +18,29 @@
     &__img{
         max-width: 255px;
     }
-    &__arrow{
-        display: flex;
-        position: absolute;
-        bottom: 20%;
-        right: 20%;
-        background-color: $blue;
-        transition: 0.3s;
-        &__prev:hover{
-
-                opacity: 0.2;
-            
-        }
-     
+}
+.collegue .slick-arrow{
+    position:absolute;
+    background-image: url('/images/svg/back.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $blue;
+    font-size: 0;
+    padding: 28px;
+    border: none;
+    outline: none;
+    opacity: 0.2;
+    bottom: -100%;
+    &:hover{
+      opacity:1;
     }
+}
+.collegue .slick-prev{
+    right: 7%;
+}
+.collegue .slick-next{
+    right: 2%;
+    transform: rotate(180deg);
 }
 
 .collegue .slick-slide{

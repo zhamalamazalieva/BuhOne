@@ -4,8 +4,7 @@ $('.hero__slider').slick({
   dots: true,
   infinite: true,
 	arrows: true,
-	prevArrow:'.arrow__prev',
-	nextArrow:'.arrow__next',
+
   });
 
 /*COLLEGUE SLIDER
@@ -15,9 +14,7 @@ $('.collegue__slider').slick({
   infinite:true,
   arrows:true,
   slidesToShow: 4,
-  slidesToScroll: 1,
-  prevArrow:'.arrow__prev',
-  nextArrow:'.arrow__next'
+  slidesToScroll: 1
 })
 
 /*REVIEWS SLIDER

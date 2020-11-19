@@ -21,31 +21,35 @@
     z-index: 50;
     top: 170px;
   }
-  &__arrow {
-    display: flex;
-    position: absolute;
-    bottom: 15%;
-    right: 19%;
+  
+}
+
+.hero .slick-arrow{
+  position: absolute;
+  font-size: 0;
+  outline: none;
+  border: none;
+  z-index: 2;
+  padding: 28px;
+  background-color:$gray;
+  background-image: url('/images/svg/back.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  &:hover{
+    opacity: 0.4;
   }
 }
-.arrow__prev,
-.arrow__next {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color:rgba(255,255,255,.2);
-  svg{
-    fill: white;
-  }
+.hero .slick-next{
+  transform: rotate(180deg);
+  bottom: 15%;
+  left: 78%;
 }
-.arrow__prev:hover{
-  background-color: rgba(255,255,255,.4);
+.hero .slick-prev{
+  bottom: 15%;
+  left: 74.9%;
 }
-.arrow__next:hover{
-  background-color: rgba(255,255,255,.4);
-}
+
 
 .hero .slick-slide {
   border: none !important;

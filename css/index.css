@@ -81,10 +81,6 @@ a, span {
   text-decoration: none;
 }
 
-ul li {
-  list-style-type: none;
-}
-
 .btn {
   padding: 18px 50px;
   color: white;
@@ -194,7 +190,7 @@ ul li {
   margin-left: 15px;
 }
 
-.header__phone {
+.header__phone, .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,42 +280,34 @@ ul li {
   top: 170px;
 }
 
-.hero__arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.hero .slick-arrow {
   position: absolute;
+  font-size: 0;
+  outline: none;
+  border: none;
+  z-index: 2;
+  padding: 28px;
+  background-color: #BDBDBD;
+  background-image: url("/images/svg/back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.hero .slick-arrow:hover {
+  opacity: 0.4;
+}
+
+.hero .slick-next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   bottom: 15%;
-  right: 19%;
+  left: 78%;
 }
 
-.arrow__prev,
-.arrow__next {
-  width: 60px;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.arrow__prev svg,
-.arrow__next svg {
-  fill: white;
-}
-
-.arrow__prev:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.arrow__next:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+.hero .slick-prev {
+  bottom: 15%;
+  left: 74.9%;
 }
 
 .hero .slick-slide {
@@ -527,7 +515,6 @@ ul li {
 .collegue {
   background-color: #EBEBEB;
   padding: 100px 0 250px;
-  position: relative;
 }
 
 .collegue__suptitle {
@@ -554,20 +541,32 @@ ul li {
   max-width: 255px;
 }
 
-.collegue__arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.collegue .slick-arrow {
   position: absolute;
-  bottom: 20%;
-  right: 20%;
+  background-image: url("/images/svg/back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #005FA3;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  font-size: 0;
+  padding: 28px;
+  border: none;
+  outline: none;
+  opacity: 0.2;
+  bottom: -100%;
 }
 
-.collegue__arrow__prev:hover {
-  opacity: 0.2;
+.collegue .slick-arrow:hover {
+  opacity: 1;
+}
+
+.collegue .slick-prev {
+  right: 7%;
+}
+
+.collegue .slick-next {
+  right: 2%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .collegue .slick-slide {
