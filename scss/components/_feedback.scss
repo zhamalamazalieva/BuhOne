@@ -2,11 +2,14 @@
     background-image: url('/images/jpg/feedback__img.jpg');
     background-position: center;
     background-size: cover;
+    &__row{
+        padding-top: 122px;
+    }    
     &__left{
         padding-right: 100px;
     }
     &__title{
-        padding: 122px 0 62px;
+        padding:0 0 62px;
         color: white;
     }
     &__description{
@@ -30,6 +33,56 @@
         .phone svg, .email svg{
             margin-right: 16px;
         }
-      
+    }
+  
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+   
+    &__form{ 
+        padding-top: 20px;
+
+        label{
+            @include font($font-lato, 400);
+            font-size: 16px;
+            line-height: 1.5;
+            color: white;
+        }
+        input{
+            padding: 15px 0;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom:1px solid #fff;
+            // margin-bottom: 35px;
+            resize: vertical;
+            background-color: transparent;
+            outline: none;
+            ::placeholder{
+                @include font($font-lato, 300);
+                font-size: 28px;
+                line-height: 1.5;
+                color: $gray;
+                }
+            }
+        
+        textarea{
+            padding: 15px 0 0;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom:1px solid #fff;
+            margin-bottom: 50px;
+            resize: vertical;
+            background-color: transparent;
+            outline: none;
+            width: 100%;
+        }
+       
+    }
+    &__button{
+        margin-bottom: 140px;
     }
 }

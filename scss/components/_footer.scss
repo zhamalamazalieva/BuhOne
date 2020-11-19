@@ -1,0 +1,11 @@
+.footer{
+    &__row{
+        padding: 50px 0 40px;
+        justify-content: space-between;
+    }
+    &__text{
+        @include font($font-lato, 300);
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
