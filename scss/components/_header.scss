@@ -2,54 +2,38 @@
     &__row{
         align-items: center;
     }
-    &__left{
+    &__block--left, &__block--right, &__top{
         display: flex;
+    }
+    &__block--left{
         align-items: center;
     }
-    &__text{
-        @include font($font-weather, 900);
-        font-size: 36px;
+    &__text-logo{
+        @include font($font-weather, 900, 36px, $lheight);
         font-style: normal;
-        line-height: 1.5;
         letter-spacing: 0em;
-        text-align: left;
-        margin-left:30px;
+        padding-left:30px;
     }  
-    &__header__right{
-        display: flex;
+    &__block--right{
         flex-direction: column;
     }
     &__top{
-        display: flex;
         justify-content: space-between;
         padding: 22px 0;
     }
     &__span{
-        @include font($font-lato, 400);
-        font-size: 13px;
+        @include font($font-lato, 400, 13px, $lheight);
         font-style: normal;
-        line-height: 1.5;
         letter-spacing: 0em;
         text-align: left;
         margin-left: 15px;
     }
-    &__phone, &{
-        display: flex;
-    }
-    &__clock{
-        display: flex;
-    }
-    &__email{
-        display: flex;
-    }
-    &__placeholder{
+    &__phone, &__clock, &__placeholder, &__email{
         display: flex;
     }
     &__bottom{
         margin-bottom: 30px;
-    }
-
-   
+    }   
 }
 .nav{
     &__menu{
@@ -57,10 +41,8 @@
         justify-content: space-between;
     }
     &__link{
-        @include font($font-lato, 700);
-        font-size: 14px;
+        @include font($font-lato, 700, 14px, $lheight:1);
         font-style: normal;
-        line-height: 1;
         letter-spacing: 0.1em;
         text-align: left;
         color: black;

@@ -149,7 +149,7 @@ a, span {
           align-items: center;
 }
 
-.header__text {
+.header__text-logo {
   font-family: "Merriweather";
   font-weight: 900;
   font-size: 36px;
@@ -157,7 +157,7 @@ a, span {
   line-height: 1.5;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 30px;
+  padding-left: 30px;
 }
 
 .header__header__right {
@@ -773,7 +773,7 @@ a, span {
 }
 
 .feedback {
-  background-image: url("./images/jpg/feedback__img.jpg");
+  background-image: url("/images/jpg/feedback__img.jpg");
   background-position: center;
   background-size: cover;
 }

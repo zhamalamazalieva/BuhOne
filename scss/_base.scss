@@ -16,17 +16,14 @@ a, span{
 .btn{
     padding: 18px 50px;
     color: white;
-    @include font($font-lato, 400);
-    font-size: 18px;
+    @include font($font-lato, 400,18px,1);
     font-style: normal;
-    line-height: 1;
     letter-spacing: 0em;
     text-align: center;
     background-color:$blue;
     transition: .5s;
     outline: none;
-    border: 2px solid transparent;
-    
+    border: 2px solid transparent;    
     &:hover{
         opacity: .7;
         outline: none;
@@ -38,14 +35,11 @@ a, span{
 }
 .section{
     &__suptitle{
-        @include font($font-lato, 900);
+        @include font($font-lato, 900, 24px);
         font-style: normal;
-        font-size: 24px;
         color: $gray;
     }
     &__title{
-        @include font($font-weather, 900);
-        font-size: 48px;
-        line-height: 1.5;
+        @include font($font-weather,900, 48px, $lheight);
     }
 }

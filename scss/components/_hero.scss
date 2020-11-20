@@ -2,13 +2,11 @@
   &__img{
     min-height:750px;
     margin: 0 auto;
-    width: 100;
+    width: 100%;
   }
   &__title {
-    @include font($font-weather, 700);
-    font-size: 48px;
+    @include font($font-weather, 700, 48px, $lheight);
     font-style: normal;
-    line-height: 1.5;
     letter-spacing: 0em;
     text-align: left;
     color: white;
@@ -23,71 +21,59 @@
     z-index: 50;
     top: 170px;
   }
-  
+  .slick-arrow{
+    position: absolute;
+    font-size: 0;
+    outline: none;
+    border: none;
+    z-index: 2;
+    background-image:$gray url('./images/svg/back.svg') no-repeat center;
+    opacity: 0.2;
+      &:hover{
+        opacity: 0.4;
+      }
+   }
+    .slick-prev{
+      bottom: 15%;
+      left: 74.7%;
+    }
+    .slick-next{
+      transform: rotate(180deg);
+      bottom: 15%;
+      left: 78%;
+    }
+    .slick-slide {
+      border: none !important;
+      outline: none !important;
+    }
+    .slick-slider {
+      width: 100%;
+    }
+    .slick-dots, .slick-track {
+      display: flex;
+    }
+   .slick-dots{
+      position: absolute;
+      bottom: 15%;
+      left: 20%;
+    }
+    .slick-dots li {
+      margin-right: 40px;
+    }
+    .slick-dots button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      font-size: 0;
+      background-color: #ffff;
+      opacity: 0.4;
+      outline: none;
+      border: none;
+      padding:0;
+    
+    }
+    .slick-dots .slick-active button {
+      opacity: 1;
+    }   
 }
 
-.hero .slick-arrow{
-  position: absolute;
-  font-size: 0;
-  outline: none;
-  border: none;
-  z-index: 2;
-  padding: 28px;
-  background-color:$gray;
-  background-image: url('./images/svg/back.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.2;
-  &:hover{
-    opacity: 0.4;
-  }
-}
-.hero .slick-next{
-  transform: rotate(180deg);
-  bottom: 15%;
-  left: 78%;
-}
-.hero .slick-prev{
-  bottom: 15%;
-  left: 74.7%;
-}
-
-
-.hero .slick-slide {
-  border: none !important;
-  outline: none !important;
-}
-.hero .slick-slider {
-  width: 100%;
-}
-.hero .slick-track {
-  display: flex;
-}
-.hero .slick-dots {
-  display: flex;
-  position: absolute;
-  bottom: 15%;
-  left: 20%;
-}
-.hero .slick-dots li {
-  margin-right: 40px;
-}
-.hero .slick-dots button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  font-size: 0;
-  background-color: #ffff;
-  opacity: 0.4;
-  outline: none;
-  border: none;
-  padding:0;
-
-}
-.hero .slick-dots .slick-active button {
-  opacity: 1;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
