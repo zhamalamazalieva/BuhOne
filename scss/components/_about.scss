@@ -12,33 +12,27 @@
         padding-bottom: 40px;
     }
     &__description{
-        @include font($font-lato, 300);
-        font-size: 18px;
+        @include font($font-lato, 300, 18px, $lheight);
         font-style: normal;
-        line-height: 1.5;
         width: 445px;
     }
-    &__right{
+    &__block--right{
         padding-top: 24px;
     }
-    &__block{
+    &__item--quadrate{
         min-width: 255px;
         min-height: 255px;
         background-color:$light-gray; 
         margin: 0 30px 30px 0;      
     }
     &__number{
-        @include font($font-lato, 900);
+        @include font($font-lato, 900,55px, $lheight);
         font-style: normal;
         text-transform: uppercase;
-        font-size: 55px;
-        line-height: 1.5;
         padding-bottom: 20px;
     }
     &__name{
-        @include font($font-lato, 600);
-        font-size: 14px;
-        line-height: 1.5;
+        @include font($font-lato, 600, 14px, $lheight);
         font-style: normal;
         padding-bottom: 30px;
         width: 70%;
@@ -46,21 +40,21 @@
     &__link{
         text-decoration: underline;
         color: $blue;
-        @include font($font-lato, 300);
-        font-size: 14px;
+        @include font($font-lato, 300, 14px);
         font-style: normal;
     }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 40px 30px;
+        transition: 0.3s;
+        &:hover{
+            background-color: $blue;
+            color: white;
+        }
+        &:hover a{
+            color: white;
+        }
+    }   
 }
-.block__inner{
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0 40px 30px;
-    transition: 0.3s;
-    &:hover{
-        background-color: $blue;
-        color: white;
-    }
-    &:hover a{
-        color: white;
-    }
-}
+
