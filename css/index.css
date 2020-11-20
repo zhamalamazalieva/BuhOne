@@ -836,14 +836,12 @@ a, span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.feedback__form {
-  padding-top: 20px;
+  padding-right: 30px;
 }
 
 .feedback__form .form__row1 {
   margin-bottom: 30px;
+  padding-top: 20px;
 }
 
 .feedback__form label {
