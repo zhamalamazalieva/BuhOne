@@ -33,21 +33,17 @@
         .phone svg, .email svg{
             margin-right: 16px;
         }
-    }
-
-    &__flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-right: 30px;
-    }
-   
+    }   
     &__form{ 
-        .form__row1{
-            margin-bottom: 30px;
-            padding-top: 20px;
+     
+        // &__flex{
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-between;
+        //     padding: 0  15px 0 0;
 
-        }
+        // }
+      
 
         label{
             @include font($font-lato, 400);
@@ -61,11 +57,11 @@
             border-left: transparent;
             border-right: transparent;
             border-bottom:1px solid #fff;
-            // margin-bottom: 35px;
             resize: vertical;
             background-color: transparent;
             outline: none;
             color: white;
+            margin-bottom: 30px;
             ::placeholder{
                 @include font($font-lato, 300);
                 font-size: 28px;
@@ -95,3 +91,11 @@
         float: right;
     }
 }
+.form__flex{
+    display: flex;
+    flex-direction: column;
+    padding: 0  15px 0 0;
+}
+// .form__flex:nth-last-child(1){
+//     padding:0;
+// }
