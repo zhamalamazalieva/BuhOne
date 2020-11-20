@@ -1,6 +1,8 @@
 .hero {
   &__img{
     min-height:750px;
+    margin: 0 auto;
+    width: 100;
   }
   &__title {
     @include font($font-weather, 700);
