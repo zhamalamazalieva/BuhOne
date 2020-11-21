@@ -1,45 +1,45 @@
-.container{
-    width: 100%;
-    max-width: 1110px;
-    margin: 0 auto;
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
-a, span{
-    display: inline-block;
-    text-decoration: none;
+a,
+span {
+  display: inline-block;
+  text-decoration: none;
 }
 
-.btn{
-    padding: 18px 50px;
-    color: white;
-    @include font($font-lato, 400,18px,1);
-    font-style: normal;
-    letter-spacing: 0em;
-    text-align: center;
-    background-color:$blue;
-    transition: .5s;
+.btn {
+  padding: 18px 50px;
+  color: white;
+  @include font($font-lato, 400, 18px, 1);
+  font-style: normal;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: $blue;
+  transition: 0.5s;
+  outline: none;
+  border: 2px solid transparent;
+  &:hover {
+    opacity: 0.7;
     outline: none;
-    border: 2px solid transparent;    
-    &:hover{
-        opacity: .7;
-        outline: none;
-        border: none;
-        background-color: transparent;
-        border: 2px solid white;
-    }
-
+    border: none;
+    background-color: transparent;
+    border: 2px solid white;
+  }
 }
-.section{
-    &__suptitle{
-        @include font($font-lato, 900, 24px);
-        font-style: normal;
-        color: $gray;
-    }
-    &__title{
-        @include font($font-weather,900, 48px, $lheight);
-    }
+.section {
+  &__suptitle {
+    @include font($font-lato, 900, 24px, 1.5);
+    font-style: normal;
+    color: $gray;
+  }
+  &__title {
+    @include font($font-weather, 900, 48px, $lheight);
+  }
 }

@@ -13,18 +13,14 @@
         color: white;
     }
     &__description{
-        @include font($font-lato, 300);
-        font-size: 18px;
-        line-height: 1.5;
+        @include font($font-lato, 300, 18px, 1.5);
         color: white;
         padding-bottom: 80px;
     }
     &__contact{
         display: flex;
         justify-content: space-between;
-        @include font($font-lato, 300);
-        font-size: 21px;
-        line-height: 1.5;
+        @include font($font-lato, 300,21px, 1.5);
         color: white;
         .phone, .email{
             display: flex;
@@ -45,9 +41,7 @@
     }
    &__form{ 
         label{
-            @include font($font-lato, 400);
-            font-size: 16px;
-            line-height: 1.5;
+            @include font($font-lato, 400, 16px, 1.5);
             color: white;
         }
         input{
@@ -62,9 +56,7 @@
             color: white;
             margin-bottom: 30px;
             ::placeholder{
-                @include font($font-lato, 300);
-                font-size: 28px;
-                line-height: 1.5;
+                @include font($font-lato, 300, 28px, 1.5);
                 color: $gray;
                 }
             }
@@ -90,11 +82,3 @@
         float: right;
     }
 }
-// .form__flex{
-//     display: flex;
-//     flex-direction: column;
-//     padding: 0  15px 0 0;
-// }
-// // .form__flex:nth-last-child(1){
-// //     padding:0;
-// // }

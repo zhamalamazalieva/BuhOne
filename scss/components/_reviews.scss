@@ -1,7 +1,4 @@
 .reviews{
-    position: relative;
-    padding-bottom: 140px;
-
     &__suptitle{
         padding-top: 140px;
     }
@@ -14,100 +11,94 @@
         margin-bottom: 250px;
     }
     &__text{
-        @include font($font-lato, 300);
-        font-size: 18px;
-        line-height: 1.5;
+        @include font($font-lato, 300, 18px, 1.5);
         padding-bottom: 60px;
     }
     &__author{
         display: flex;
     }
-
-}
-.author{
-    &__img{
-        width: 60px;
-        height: 60px;
-        overflow: hidden;
-        border-radius: 50%;
-        margin-right: 35px;
-
-        img{
-            width: auto;
-            height: 100%;
-            background-size: cover;
-            background-position:center;
-        }}
-    &__info{
+    .author{
+        &__img{
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 35px;
+    
+            img{
+                width: auto;
+                height: 100%;
+                background-size: cover;
+                background-position:center;
+            }
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+        }
+        &__name{
+            @include font($font-lato, 900,18px, 1.5);
+            padding-bottom: 10px;
+        }
+        &__position{
+            @include font($font-lato,400,14px, 1.5);
+        }
+    }
+    .slick-arrow{
+        position:absolute;
+        background-image: url('./images/svg/back.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $blue;
+        font-size: 0;
+        padding: 28px;
+        border: none;
+        outline: none;
+        opacity: 1;
+        bottom: 24%;
+        z-index: 5;
+        transition: .3s;
+            &:hover{
+            opacity:.2;
+            }
+    }
+    .slick-prev{
+        right: 5.1%;
+    }
+    .slick-next{
+        right: 0%;
+        transform: rotate(180deg);
+    }
+    .slick-slide{
+        border: none !important;
+        outline: none !important;
+    }
+    .slick-slider{
+        width: 100%;
+        display: flex !important;
+    }
+    .slick-dots{
         display: flex;
-        flex-direction: column;
+        position: absolute;
+        padding: 0;
+        bottom: 25%;
+        left: 25%;
+        transform: translateX(-185%);
     }
-    &__name{
-        @include font($font-lato, 900);
-        font-size: 18px;
-        line-height: 1.5;
-        padding-bottom: 10px;
+    .slick-dots button{
+        width: 10px;
+        height: 10px;
+        border-radius:50%;
+        background-color: $blue;
+        opacity: 0.4;
+        margin-right: 40px;
+        padding: 0;
+        outline: none;
+        border: none;
+        font-size: 0;
+    
     }
-    &__position{
-        @include font($font-lato,400);
-        font-size: 14px;
-        line-height: 1.5;
+    .slick-dots .slick-active button{
+        opacity: 1;
     }
-}
-.reviews .slick-arrow{
-    position:absolute;
-    background-image: url('./images/svg/back.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $blue;
-    font-size: 0;
-    padding: 28px;
-    border: none;
-    outline: none;
-    opacity: 1;
-    bottom: 24%;
-    z-index: 5;
-    transition: .3s;
-    &:hover{
-      opacity:.2;
-    }
-}
-.reviews .slick-prev{
-    right: 5.1%;
-}
-.reviews .slick-next{
-    right: 0%;
-    transform: rotate(180deg);
-}
-.reviews .slick-slide{
-    border: none !important;
-    outline: none !important;
-}
-.reviews .slick-slider{
-    width: 100%;
-    display: flex !important;
-}
-.reviews .slick-dots{
-    display: flex;
-    position: absolute;
-    padding: 0;
-    bottom: 25%;
-    left: 25%;
-    transform: translateX(-185%);
-}
-.reviews .slick-dots button{
-    width: 10px;
-    height: 10px;
-    border-radius:50%;
-    background-color: $blue;
-    opacity: 0.4;
-    margin-right: 40px;
-    padding: 0;
-    outline: none;
-    border: none;
-    font-size: 0;
-
-}
-.reviews .slick-dots .slick-active button{
-    opacity: 1;
 }

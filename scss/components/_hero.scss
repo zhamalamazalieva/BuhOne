@@ -18,7 +18,7 @@
   }
   &__inner {
     position: absolute;
-    z-index: 50;
+    z-index: 5;
     top: 170px;
   }
   .slick-arrow{
@@ -26,8 +26,10 @@
     font-size: 0;
     outline: none;
     border: none;
-    z-index: 2;
-    background-image:$gray url('./images/svg/back.svg') no-repeat center;
+    z-index: 55;
+    width: 60px;
+    height: 60px;
+    background-image:url('/images/svg/back.svg');
     opacity: 0.2;
       &:hover{
         opacity: 0.4;
@@ -70,7 +72,6 @@
       outline: none;
       border: none;
       padding:0;
-    
     }
     .slick-dots .slick-active button {
       opacity: 1;

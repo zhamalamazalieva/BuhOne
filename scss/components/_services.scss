@@ -2,7 +2,7 @@
     background-color: $light-gray;
     &__row{
         padding-bottom: 140px;
-        margin: -15px;
+        margin:0 -15px;
     }
     &__title{
         padding-top: 40px;
@@ -42,9 +42,7 @@
         position: absolute;
         bottom: 10%;
         left: 10%;
-        @include font($font-lato, 900);
-        font-size: 24px;
-        line-height: 1.5;
+        @include font($font-lato, 900, 24px, 1.5);
         color: white;
         width: 50%;
         z-index: 2;

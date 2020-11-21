@@ -4,8 +4,6 @@
         justify-content: space-between;
     }
     &__text{
-        @include font($font-lato, 300);
-        font-size: 14px;
-        line-height: 1.5;
+        @include font($font-lato, 300, 14px, 1.5);
     }
 }
