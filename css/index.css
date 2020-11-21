@@ -738,7 +738,7 @@ span {
 }
 
 .feedback {
-  background-image: url("/images/jpg/feedback__img.jpg");
+  background-image: url("/images/jpg/feedback__img.webp");
   background-position: center;
   background-size: cover;
 }
