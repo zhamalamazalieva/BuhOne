@@ -59,3 +59,14 @@
         }
     }
 }
+
+/*MEDIA
+==========================================*/
+@media screen and (max-width:1024px){
+    .header{
+        padding: 20px 0;
+        &__block--right{
+            display: none;
+        }
+    }
+}

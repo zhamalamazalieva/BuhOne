@@ -10,3 +10,12 @@
 .col-12{
     width: 100%;
 }
+
+
+/*MEDIA
+==============================================*/
+@media screen and (max-width:1024px){
+    .col-4, .col-6, .col-5, .col-8{
+        width: 100%;
+    }
+}

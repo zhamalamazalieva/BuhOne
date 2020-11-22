@@ -43,3 +43,21 @@ span {
     @include font($font-weather, 900, 48px, $lheight);
   }
 }
+
+/*MEDIA
+======================================*/
+@media screen and (max-width:1024px){
+  .container{
+    padding: 0 25px;
+  }
+  .btn{
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+  .section__title{
+    font-size: 24px;
+  }
+  .section__suptitle{
+    font-size: 16px;
+  }
+}

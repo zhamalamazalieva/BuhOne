@@ -49,3 +49,30 @@
 
     }
 }
+
+
+/*MEDIA
+======================================*/
+@media screen and (max-width:1024px){
+    .services{
+        &__suptitle{
+            padding-top: 50px;
+        }
+        &__title{
+            padding-top: 25px;
+
+        }
+        &__description{
+            font-size: 16px;
+
+        }
+        &__row{
+            padding-top: 25px;
+            margin: 0;
+        }
+        &__img{
+            max-width: 300px;
+        }
+        
+    }
+}

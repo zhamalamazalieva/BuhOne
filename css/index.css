@@ -120,6 +120,24 @@ span {
   line-height: 1.5;
 }
 
+/*MEDIA
+======================================*/
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 25px;
+  }
+  .btn {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+  .section__title {
+    font-size: 24px;
+  }
+  .section__suptitle {
+    font-size: 16px;
+  }
+}
+
 .col-4 {
   width: 33.333333333%;
 }
@@ -134,6 +152,14 @@ span {
 
 .col-12 {
   width: 100%;
+}
+
+/*MEDIA
+==============================================*/
+@media screen and (max-width: 1024px) {
+  .col-4, .col-6, .col-5, .col-8 {
+    width: 100%;
+  }
 }
 
 .header__row {
@@ -234,6 +260,17 @@ span {
   margin-left: 0;
 }
 
+/*MEDIA
+==========================================*/
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 20px 0;
+  }
+  .header__block--right {
+    display: none;
+  }
+}
+
 .hero__img {
   min-height: 750px;
   margin: 0 auto;
@@ -332,6 +369,17 @@ span {
   opacity: 1;
 }
 
+/*MEDIA
+======================================*/
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    font-size: 24px;
+  }
+  .hero .slick-arrow {
+    display: none;
+  }
+}
+
 .footer__row {
   padding: 50px 0 40px;
   -webkit-box-pack: justify;
@@ -408,6 +456,27 @@ span {
   color: white;
   width: 50%;
   z-index: 2;
+}
+
+/*MEDIA
+======================================*/
+@media screen and (max-width: 1024px) {
+  .services__suptitle {
+    padding-top: 50px;
+  }
+  .services__title {
+    padding-top: 25px;
+  }
+  .services__description {
+    font-size: 16px;
+  }
+  .services__row {
+    padding-top: 25px;
+    margin: 0;
+  }
+  .services__img {
+    max-width: 300px;
+  }
 }
 
 .about__row {
@@ -530,7 +599,7 @@ span {
 
 .collegue .slick-arrow {
   position: absolute;
-  background-image: url("./images/svg/back.svg");
+  background-image: url("/images/svg/back.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #005FA3;
@@ -667,7 +736,7 @@ span {
 
 .reviews .slick-arrow {
   position: absolute;
-  background-image: url("./images/svg/back.svg");
+  background-image: url("/images/svg/back.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #005FA3;
